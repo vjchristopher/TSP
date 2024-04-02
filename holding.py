@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.title('Spectrum Holding of Different Telecom Operators')
+st.title('Spectrum Holding of Different Telecom Operators in MHz')
 
 
 #read in the file
