@@ -44,8 +44,8 @@ if (st.button("Show the holding")):
     df.set_index('LSA',inplace=True) 
     df.style.format(precision=2)  #rounding to two places   
     st.header('Quantum of Spectrum in MHz ', divider='rainbow')
-    st.subheader('The last row in the table shows the indicative value for each spectrum')
-    st.subheader('bands in Rs.Crores as per the current Reserve Price.',divider='green')
+    st.subheader('The last row in the table shows the indicative value for each spectrum bands in Rs.Crores as per the current Reserve Price.',divider='green')
+    #st.subheader('bands in Rs.Crores as per the current Reserve Price.',divider='green')
     st.table(df.style.format(precision=2))
     st.subheader('',divider='green')
     col1, col2 = st.columns((14,2))
