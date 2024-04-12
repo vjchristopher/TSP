@@ -40,6 +40,7 @@ if (st.button("Show the holding")):
     gross=0
     for fig in new_row[2:]:
         gross+=fig
+    gross=round(gross,2)
     df.loc[len(df.index)]=new_row        
     df.set_index('LSA',inplace=True) 
     df.style.format(precision=2)  #rounding to two places   
